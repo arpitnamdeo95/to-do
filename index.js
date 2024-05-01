@@ -17,13 +17,13 @@ function clicked(){
     saveData();
 }
 
-listsEl.addEventListener("click",(e)=>{
-    if(e.target.tagName === "LI"){
+listsEl.addEventListener("click",(e)=>{   
+    if(e.target.tagName === "LI"){               
         e.target.classList.toggle("checked");
-    }else if(e.target.tagName === "SPAN"){
-        e.target.parentElement.remove();
+    }else if(e.target.tagName === "SPAN"){              
+        e.target.parentElement.remove();        
     }
-    saveData();
+    saveData();      
 })
 
 function saveData(){
