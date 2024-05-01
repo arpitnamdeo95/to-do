@@ -26,12 +26,12 @@ listsEl.addEventListener("click",(e)=>{
     saveData();      
 })
 
-function saveData(){
-    localStorage.setItem("data",listsEl.innerHTML);
+function saveData(){            
+    localStorage.setItem("data",listsEl.innerHTML);       
 }
-
-function getData(){
-    listsEl.innerHTML = localStorage.getItem("data");
+    
+function getData(){           
+    listsEl.innerHTML = localStorage.getItem("data");             
 }
 
 getData();
