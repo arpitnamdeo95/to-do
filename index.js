@@ -4,15 +4,15 @@ const listsEl = document.querySelector(".lists");
 
 function clicked(){
     if(taskEl.value===""){
-        alert("Task should not be empty")
+        alert("Task should not be empty")  
     }else{
-        let li = document.createElement("li");
+        let li = document.createElement("li");               
         li.innerHTML = taskEl.value;
-        listsEl.appendChild(li);
-        taskEl.value = "";
-        let span = document.createElement("span");
-        span.innerHTML = "\u00d7";
-        li.appendChild(span);
+        listsEl.appendChild(li);        
+        taskEl.value = "";        
+        let span = document.createElement("span");      
+        span.innerHTML = "\u00d7";      
+        li.appendChild(span);      
     }
     saveData();
 }
